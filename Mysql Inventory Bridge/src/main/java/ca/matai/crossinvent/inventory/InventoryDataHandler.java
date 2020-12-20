@@ -54,6 +54,13 @@ public class InventoryDataHandler {
                         e.printStackTrace();
                     }
                 }
+                if (pd.getConfigHandler().getBoolean("General.syncEnderChestEnabled")) {
+                    try {
+                        p.getEnderChest().setContents(decodeItems(data.getRawEnderChest()));
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
                 if (pd.getConfigHandler().getBoolean("General.syncHealthEnabled")) {
                     try {
                         p.setHealth(Double.parseDouble(data.getRawHealth()));

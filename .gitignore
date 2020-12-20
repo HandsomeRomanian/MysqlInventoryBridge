@@ -4,3 +4,5 @@ Mysql Inventory Bridge/target/
 Mysql Inventory Bridge/.idea/
 
 *.iml
+
+.idea/
