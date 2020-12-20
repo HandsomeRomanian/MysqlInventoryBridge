@@ -1,0 +1,107 @@
+
+[01:56:40 INFO]: _Matai_ lost connection: Disconnected
+[01:56:40 ERROR]: Could not pass event PlayerQuitEvent to MysqlInventoryBridge v2.4.1
+java.lang.NoClassDefFoundError: ca/matai/crossinvent/inventory/events/PlayerQuit$1
+        at ca.matai.crossinvent.inventory.events.PlayerQuit.onDisconnect(PlayerQuit.java:23) ~[?:?]
+        at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor14.execute(Unknown Source) ~[?:?]
+        at org.bukkit.plugin.EventExecutor.lambda$create$1(EventExecutor.java:69) ~[patched_1.16.4.jar:git-Paper-282]
+        at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[patched_1.16.4.jar:git-Paper-282]
+        at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[patched_1.16.4.jar:git-Paper-282]
+        at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:607) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.PlayerList.disconnect(PlayerList.java:513) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:1677) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.NetworkManager.handleDisconnection(NetworkManager.java:500) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.ServerConnection.c(ServerConnection.java:165) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.MinecraftServer.b(MinecraftServer.java:1384) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1000) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.4.jar:git-Paper-282]
+        at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.lang.ClassNotFoundException: ca.matai.crossinvent.inventory.events.PlayerQuit$1
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:141) ~[patched_1.16.4.jar:git-Paper-282]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:100) ~[patched_1.16.4.jar:git-Paper-282]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+        ... 16 more
+Caused by: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+        at java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(ZipFile.java:995) ~[?:?]
+        at java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:1005) ~[?:?]
+        at java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:468) ~[?:?]
+        at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:159) ~[?:?]
+        at java.io.FilterInputStream.read(FilterInputStream.java:107) ~[?:?]
+        at com.google.common.io.ByteStreams.copy(ByteStreams.java:106) ~[patched_1.16.4.jar:git-Paper-282]
+        at com.google.common.io.ByteStreams.toByteArray(ByteStreams.java:166) ~[patched_1.16.4.jar:git-Paper-282]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:139) ~[patched_1.16.4.jar:git-Paper-282]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:100) ~[patched_1.16.4.jar:git-Paper-282]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+
+
+
+
+
+[01:56:03 INFO]: UUID of player _Matai_ is 5abfcbd7-736a-4954-b72e-b8f98aa84dc0
+[01:56:03 ERROR]: Could not pass event PlayerJoinEvent to MysqlInventoryBridge v2.4.1
+java.lang.NoClassDefFoundError: ca/matai/crossinvent/inventory/events/PlayerJoin$1
+        at ca.matai.crossinvent.inventory.events.PlayerJoin.onLogin(PlayerJoin.java:24) ~[?:?]
+        at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor13.execute(Unknown Source) ~[?:?]
+        at org.bukkit.plugin.EventExecutor.lambda$create$1(EventExecutor.java:69) ~[patched_1.16.4.jar:git-Paper-282]
+        at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[patched_1.16.4.jar:git-Paper-282]
+        at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[patched_1.16.4.jar:git-Paper-282]
+        at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:607) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.PlayerList.postChunkLoadJoin(PlayerList.java:273) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.PlayerList.lambda$null$1(PlayerList.java:220) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.PlayerConnection.tick(PlayerConnection.java:165) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.NetworkManager.a(NetworkManager.java:388) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.ServerConnection.c(ServerConnection.java:145) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.MinecraftServer.b(MinecraftServer.java:1384) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1000) ~[patched_1.16.4.jar:git-Paper-282]
+        at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.4.jar:git-Paper-282]
+        at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.lang.ClassNotFoundException: ca.matai.crossinvent.inventory.events.PlayerJoin$1
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:141) ~[patched_1.16.4.jar:git-Paper-282]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:100) ~[patched_1.16.4.jar:git-Paper-282]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+        ... 17 more
+Caused by: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+        at java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(ZipFile.java:995) ~[?:?]
+        at java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:1005) ~[?:?]
+        at java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:468) ~[?:?]
+        at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:159) ~[?:?]
+        at java.io.FilterInputStream.read(FilterInputStream.java:107) ~[?:?]
+        at com.google.common.io.ByteStreams.copy(ByteStreams.java:106) ~[patched_1.16.4.jar:git-Paper-282]
+        at com.google.common.io.ByteStreams.toByteArray(ByteStreams.java:166) ~[patched_1.16.4.jar:git-Paper-282]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:139) ~[patched_1.16.4.jar:git-Paper-282]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:100) ~[patched_1.16.4.jar:git-Paper-282]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+        ... 17 more
+
+
+
+
+[01:56:03 WARN]: [MysqlInventoryBridge] Error: Data truncation: Data too long for column 'health' at row 1
+[01:56:03 WARN]: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'health' at row 1
+[01:56:03 WARN]:        at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3931)
+[01:56:03 WARN]:        at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+[01:56:03 WARN]:        at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+[01:56:03 WARN]:        at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+[01:56:03 WARN]:        at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+[01:56:03 WARN]:        at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1915)
+[01:56:03 WARN]:        at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2136)
+[01:56:03 WARN]:        at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2070)
+[01:56:03 WARN]:        at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5187)
+[01:56:03 WARN]:        at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2055)
+[01:56:03 WARN]:        at ca.matai.crossinvent.inventory.database.InvMysqlInterface.setData(InvMysqlInterface.java:112)
+[01:56:03 WARN]:        at ca.matai.crossinvent.inventory.InventoryDataHandler.onDataSaveFunction(InventoryDataHandler.java:191)
+[01:56:03 WARN]:        at ca.matai.crossinvent.inventory.events.PlayerQuit$1.run(PlayerQuit.java:31)
+[01:56:03 WARN]:        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftTask.run(CraftTask.java:99)
+[01:56:03 WARN]:        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:54)
+[01:56:03 WARN]:        at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
+[01:56:03 WARN]:        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+[01:56:03 WARN]:        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+[01:56:03 WARN]:        at java.base/java.lang.Thread.run(Thread.java:834)
